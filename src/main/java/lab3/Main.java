@@ -11,13 +11,26 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Console console = new Console(scanner);
+        int playerChoice;
 
         boolean playAgain = true; // boolean to end or play again
 
         while (playAgain) {
             Board board = new Board();
-            Player currentPlayer = Player.X; // X always starts
+            Player currentPlayer = null;
+            System.out.println("Tic Tac Toe Time!");
+            System.out.println("1 for X, 2 for O!  ");
+            playerChoice = scanner.nextInt();
 
+            if (playerChoice == 1) {
+                currentPlayer = Player.X;
+            }
+            else if (playerChoice == 2) {
+                currentPlayer = Player.O;
+            }
+            else {
+                System.out.println("Invalid Input!");
+            }
             // Main game loop
             while (true) {
                 board.printBoard();
