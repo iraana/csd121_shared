@@ -41,10 +41,12 @@ public class Board {
         return ' ';
     }
     //  - method to place the player symbol on the board(only of that position is not taken  so we have to add a check if the cell is free)
-    public boolean placeMove(int row, int col, char player) {
-        if (row >= 0 && row <3 && col >=0 && col < 3 && board[row][col] == ' ') {
-            board[row][col] = player;
-            return true;
+    public boolean placeMove(Position move, Player player) {
+        int row = move.row();
+        int col = move.col();
+
+        if (board[row][col] != ' ') {
+            return false;
         }
         return false;
     }
@@ -80,11 +82,9 @@ public class Board {
         }
     }
 
-    // just for testing
     public char[][] getBoard() {
         return board;
     }
 
 }
-
 

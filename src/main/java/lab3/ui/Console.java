@@ -1,45 +1,86 @@
 package lab3.ui;
+import lab3.game.*;
+
 import java.util.Scanner;
 public class Console {
 
     // Static Scanner object "sc" to take inputs
     public static Scanner sc = new Scanner(System.in);
+
     // TODO: create a CLASS method to display a tictactoe board
     public static void printBoard(char[][] board) {
         System.out.println("---------------------");
-        for(int i=0; i<3; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.print("| ");
-            for(int j=0; j<3; j++) {
-                System.out.println(board[i][j] + " | ");
+            for (int j = 0; j < 3; j++) {
+                System.out.print(board[i][j] + " | ");
             }
-            System.out.println("-------------------------");
+            System.out.println(); // Move to the next row
+            System.out.println("---------------------");
         }
     }
+
+    public static void initializeGame(){
+        int playerChoice;
+        Player player = null;
+        Board board = new Board();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Tic Tac Toe Time!");
+        System.out.println("1 for X, 2 for O!  ");
+        playerChoice = sc.nextInt();
+
+        if (playerChoice == 1) {
+            player = Player.X;
+        }
+        else if (playerChoice == 2) {
+            player = Player.O;
+        }
+        else{
+            System.out.println("Invalid Input!");
+            initializeGame();
+        }
+
+        assert player != null;
+        System.out.println("Starting player: " + player.getSymbol());
+
+        printBoard(board.getBoard());
+        getNextMove(player.getSymbol());
+
+    }
+
     // TODO: create a CLASS method to get the next move from a player
-    public static int[] getNextMove(char player) {
-        System.out.println("Player " + player + ", please enter your move (0,1,2): ");
-        int row=-1, col=-1; // initializing row and col with defaul values.
+    public static void getNextMove(char player) {
+        Column col = null;
+        Row row = null;
+        Board board = new Board();
+        Position position = new Position(row, col);
 
-        // looping using while
-        while (true) {
-            // try block: for exception handling
-            try {
-                row = sc.nextInt(); // taking user input for row
-                col = sc.nextInt(); // taking user input for col
+        System.out.println("Let's get your move, choose the column your playing. Between 0, 1 and 2");
+        int columnChoice = sc.nextInt();
+        col = Column.userInputForColumn(columnChoice);
 
-                // checking for upper and lower limits, MAX:3
-                if (row >= 0 && row < 3 && col >= 0 && col < 3) {
-                    break;
+        System.out.println("Let's get your move, choose the row your playing. Between 0, 1 and 2");
+        int rowChoice = sc.nextInt();
+        row = Row.userInputForRow(rowChoice);
+
+
+        if (board.placeMove(position, player)) {
+            char winner = board.checkWinner();
+            if (winner == currentPlayer.getSymbol()) {
+                board.printBoard();
+                console.showWinner(currentPlayer);
+                    }
+            else if (board.checkDraw()) {
+                board.printBoard();
+                console.showDraw();
                 }
-                // in-case of error
-                else {
-                    System.out.println("Invalid input. Available options are: 0, 1 and 2.");
-                }
-            }
-            catch(Exception e) {
-                System.out.println(e.getMessage()); // printing stack-trace.
-            }
-        }
-        return new int[] {row, col}; // return row and col values to occupy space on the board.
+            currentPlayer = currentPlayer.next();
+
     }
+
+
+
 }
+
+
