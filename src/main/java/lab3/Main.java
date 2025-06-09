@@ -1,18 +1,67 @@
 package lab3;
 
+import lab3.ui.*;
+import java.util.Scanner;
+import lab3.game.*;
+
+/**
+ * Main class to run the Tic Tac Toe game.
+ */
 public class Main {
-
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Console console = new Console(scanner);
+        int playerChoice;
 
-        // TODO: Initialize a TicTacToe game with a 3x3 board and two players
+        boolean playAgain = true; // boolean to end or play again
 
-        while (true) {
-            // TODO: Display the board
+        while (playAgain) {
+            Board board = new Board();
+            Player currentPlayer = null;
+            System.out.println("Tic Tac Toe Time!");
+            System.out.println("1 for X, 2 for O!  ");
+            playerChoice = scanner.nextInt();
 
-            // TODO: Check if the game is over or a draw, and if so display the result and exit
-            
-            // TODO: Get the next move from the player and update the game state
+            if (playerChoice == 1) {
+                currentPlayer = Player.X;
+            }
+            else if (playerChoice == 2) {
+                currentPlayer = Player.O;
+            }
+            else {
+                System.out.println("Invalid Input!");
+            }
+            // Main game loop
+            while (true) {
+                board.printBoard();
+                System.out.println("Player " + currentPlayer.getSymbol() + ", it's your turn.");
+                Position move = console.promptForPosition();
 
+                if (board.placeMove(move, currentPlayer)) {
+                    char winner = board.checkWinner();
+                    if (winner == currentPlayer.getSymbol()) {
+                        board.printBoard();
+                        console.showWinner(currentPlayer);
+                        break;
+                    } else if (board.checkDraw()) {
+                        board.printBoard();
+                        console.showDraw();
+                        break;
+                    }
+                    currentPlayer = currentPlayer.next(); // Switch player
+                } else {
+                    System.out.println("That spot is already taken. Try again.");
+                }
+            }
+
+            // Ask user to play again
+            System.out.println("Play again? Enter 1 for Yes or 0 for No:");
+            int input = scanner.nextInt();
+            scanner.nextLine();
+            playAgain = (input == 1);
         }
+
+        System.out.println("Thanks for playing!");
+        scanner.close();
     }
 }
