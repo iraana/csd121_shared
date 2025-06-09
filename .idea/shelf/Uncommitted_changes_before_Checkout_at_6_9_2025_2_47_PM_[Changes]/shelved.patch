@@ -1,0 +1,47 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"0438f6ad-822d-4c30-9485-9a8d3dd2bb7a\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/lab3/game/Board.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/lab3/game/Board.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/lab3/ui/Console.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/lab3/ui/Console.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"Lab3Karsten\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;karsten705&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/iraana/csd121_shared.git&quot;,\r\n    &quot;accountId&quot;: &quot;a02e1536-5bf4-49ae-ad9d-b875e0fa62fe&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2xk7hSx6pPnh3HcHuo6mw2IaxPW\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;KarstenLab3Branch&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\">\r\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\r\n      <option name=\"filePath\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"0438f6ad-822d-4c30-9485-9a8d3dd2bb7a\" name=\"Changes\" comment=\"\" />\r\n      <created>1748470337866</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1748470337866</updated>\r\n      <workItem from=\"1748470340304\" duration=\"706000\" />\r\n      <workItem from=\"1748892757732\" duration=\"10232000\" />\r\n      <workItem from=\"1749138011893\" duration=\"886000\" />\r\n      <workItem from=\"1749138924005\" duration=\"503000\" />\r\n      <workItem from=\"1749139514219\" duration=\"111000\" />\r\n      <workItem from=\"1749139709257\" duration=\"721000\" />\r\n      <workItem from=\"1749140760913\" duration=\"4793000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision cd37cd788526fe25c06a4625102e5535bb1c35c0)
++++ b/.idea/workspace.xml	(date 1749278737076)
+@@ -4,9 +4,8 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="0438f6ad-822d-4c30-9485-9a8d3dd2bb7a" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/game/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab3/game/Board.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/ui/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab3/ui/Console.java" afterDir="false" />
++    <list default="true" id="0438f6ad-822d-4c30-9485-9a8d3dd2bb7a" name="Changes" comment="Board.java and Console.java methods update by Karsten">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -91,11 +90,24 @@
+       <workItem from="1749138924005" duration="503000" />
+       <workItem from="1749139514219" duration="111000" />
+       <workItem from="1749139709257" duration="721000" />
+-      <workItem from="1749140760913" duration="4793000" />
++      <workItem from="1749140760913" duration="7491000" />
++    </task>
++    <task id="LOCAL-00001" summary="Board.java and Console.java methods update by Karsten">
++      <option name="closed" value="true" />
++      <created>1749148469028</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1749148469028</updated>
+     </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="Board.java and Console.java methods update by Karsten" />
++    <option name="LAST_COMMIT_MESSAGE" value="Board.java and Console.java methods update by Karsten" />
++  </component>
+ </project>
+\ No newline at end of file
