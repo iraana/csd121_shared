@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0438f6ad-822d-4c30-9485-9a8d3dd2bb7a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="0438f6ad-822d-4c30-9485-9a8d3dd2bb7a" name="Changes" comment="add fixes from two other branches">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab3/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lab3/game/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab3/game/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lab3/ui/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lab3/ui/Console.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +112,15 @@
       <workItem from="1749139709257" duration="721000" />
       <workItem from="1749140760913" duration="4793000" />
     </task>
+    <task id="LOCAL-00001" summary="add fixes from two other branches">
+      <option name="closed" value="true" />
+      <created>1749413124171</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749413124171</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,5 +136,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add fixes from two other branches" />
+    <option name="LAST_COMMIT_MESSAGE" value="add fixes from two other branches" />
   </component>
 </project>

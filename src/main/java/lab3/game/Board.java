@@ -64,7 +64,7 @@ public class Board {
     }
 
 
-    //  - check if board is full, and we have no winner and its a draw
+    //  - check if board is full, and we have no winner and it's a draw
     public boolean isFull() {
         for (char[] row: board) {
             for (char cell : row) {
